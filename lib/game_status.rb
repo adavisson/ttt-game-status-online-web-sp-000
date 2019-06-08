@@ -38,4 +38,5 @@ def full?(board)
     position_taken?(board, index)
     index += 1
   end
+  false
 end
