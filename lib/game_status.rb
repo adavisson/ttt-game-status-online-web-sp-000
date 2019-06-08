@@ -29,4 +29,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   if(WIN_COMBINATIONS.any?{|win_combo| win_combo.all?{|idx| position_taken?(board,idx)}})
+    
+  else
+    false
 end
