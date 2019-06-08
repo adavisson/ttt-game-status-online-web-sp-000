@@ -34,9 +34,9 @@ def won?(board)
     pos[1] = board[win_combo[1]]
     pos[2] = board[win_combo[2]]
     
-    if(pos.all?{ |X| X == "X"})
+    if(pos.all?{ |"ex"| ex == "X"})
       win_combo
-    elsif(pos.all?{ |O| O == "O"})
+    elsif(pos.all?{ |"oh"| oh == "O"})
       win_combo
     else
       false
