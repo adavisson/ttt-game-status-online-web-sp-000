@@ -15,14 +15,14 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-def won?(board)
-  WIN_COMBINATIONS.any? do |win_combo|
-    if((win_combo.all?{|idx| position_taken?(board,idx)} &&
-      board[win_combo[0]] == "X" && board[win_combo[1]] == "X" &&
-      board[win_combo[0]] == "X") || (win_combo.all?{|idx| position_taken?(board,idx)} &&
-      board[win_combo[0]] == "O" && board[win_combo[1]] == "O" &&
-      board[win_combo[0]] == "O"))
-      win_combo
-    end
-  end
-end
+#def won?(board)
+#  WIN_COMBINATIONS.any? do |win_combo|
+#    if((win_combo.all?{|idx| position_taken?(board,idx)} &&
+#      board[win_combo[0]] == "X" && board[win_combo[1]] == "X" &&
+#      board[win_combo[0]] == "X") || (win_combo.all?{|idx| position_taken?(board,idx)} &&
+#      board[win_combo[0]] == "O" && board[win_combo[1]] == "O" &&
+#      board[win_combo[0]] == "O"))
+#      win_combo
+#    end
+#  end
+#end
