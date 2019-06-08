@@ -34,7 +34,12 @@ def won?(board)
     pos[1] = board[win_combo[1]]
     pos[2] = board[win_combo[2]]
     
-    pos.all? do |X|
-      X = "X"
+    if(pos.all?{ |X| X == "X"})
+      win_combo
+    elsif(pos.all?{ |O| O == "O"})
+      win_combo
+    else
+      false
     end
+  end
 end
