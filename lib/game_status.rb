@@ -33,4 +33,8 @@ def won?(board)
     pos[0] = board[win_combo[0]]
     pos[1] = board[win_combo[1]]
     pos[2] = board[win_combo[2]]
+    
+    pos.all? do |X|
+      X = "X"
+    end
 end
