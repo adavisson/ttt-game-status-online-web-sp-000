@@ -39,3 +39,11 @@ def full?(board)
     position_taken?(board, index)
   end
 end
+
+def draw?(board)
+  if full?(board) && !won(board)
+    true
+  else
+    false
+  end
+end
