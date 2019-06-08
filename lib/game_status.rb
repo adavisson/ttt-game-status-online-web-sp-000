@@ -35,6 +35,7 @@ end
 def full?(board)
   index = 0
   board.all? do |idx|
-    position_taken(board, )
+    position_taken(board, index)
+    index += 1
   end
 end
