@@ -23,8 +23,6 @@ def won?(board)
       board[win_combo[0]] == "O" && board[win_combo[1]] == "O" &&
       board[win_combo[0]] == "O"))
       win_combo
-    else
-      nil
     end
   end
 end
