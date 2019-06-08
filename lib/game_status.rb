@@ -33,7 +33,8 @@ def won?(board)
 end
 
 def full?(board)
+  index = 0
   board.all? do |idx|
-    position_taken(board, idx)
+    position_taken(board, )
   end
 end
