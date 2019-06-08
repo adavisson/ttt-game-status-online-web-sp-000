@@ -55,3 +55,8 @@ def over?(board)
     false
   end
 end
+
+def winner?(board)
+  combo = won?(board)
+  return combo[0]
+end
